@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+/* Soft Blush Gradient Theme */
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FFF1F8, #FEECEC); /* Blush Pink & Soft Peach */
+    color: #4A4A4A; /* Dark Gray */
+    animation: gradientBG 10s ease infinite;
+    background-size: 400% 400%;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background: linear-gradient(to right, #FFD6E0, #FFEEF3); /* Light Pink & Rose */
+    color: #4A4A4A;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    color: #D63384; /* Deep Pink */
+}
+
+/* Round profile picture with elegant pastel border */
+.profile-picture {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    border: 5px solid #FFB6C1; /* Light Pink */
+    transition: 0.3s;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+    border-color: #F08080; /* Coral glow */
+}
+
+nav {
+    background: #FFEEF3; /* Soft Rose */
+    color: #4A4A4A;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D63384; /* Deep Pink */
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #F08080; /* Coral */
+    transform: scale(1.1);
+}
+
+.section-content {
+    background: linear-gradient(135deg, #FFF5F7, #FFE4E9); /* Pale Blush & Light Peach */
+    color: #4A4A4A;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    text-align: justify;
+    transition: 0.3s;
+}
+
+.section-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 182, 193, 0.5); /* Light Pink Glow */
+}
+
+.download-button {
+    background: linear-gradient(to right, #FFB6C1, #FFD6E0); /* Light Pink & Soft Rose */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+}
+
+.download-button:hover {
+    background: #F08080; /* Coral */
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(255, 160, 160, 0.7); /* Coral Glow */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #FFEEF3; /* Soft Rose */
+    color: #4A4A4A;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-content">
+    <img src="https://drive.google.com/uc?id=19TCNSEcOFeX3CcMZB5O1ZssGu_zBxWLc" alt="Your Profile Picture" class="profile-picture">
+    <h1>Sweatha S</h1>
+    <p>STUDENT</p>
+</div>
+</header>
+
+<nav>
+<ul>
+    <li><a href="#objective">OBJECTIVE</a></li>
+    <li><a href="#education">EDUCATION</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#resume">RESUME</a></li>
+</ul>
+</nav>
+
+<section id="objective">
+<div class="section-content">
+    <h2>OBJECTIVE</h2>
+    <p>Enthusiastic and detail-oriented Computer Science student with a strong foundation in programming and problem-solving. Seeking opportunities to apply technical skills and gain hands-on experience in software development and related fields.</p>
+</div>
+</section>
+
+<section id="education">
+<div class="section-content">
+    <h2>EDUCATION</h2>
+    <p>BSc. COMPUTER SCIENCE</p>
+    <p>Bishop Appasamy College of Arts and Science</p>
+    <p>Coimbatore, Tamil Nadu.</p>
+</div>
+</section>
+
+<section id="skills">
+<div class="section-content">
+    <h2>SKILLS</h2>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Web Design</li>
+        <li>C++</li>
+    </ul>
+</div>
+</section>
+
+<section id="projects">
+<div class="section-content">
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="#">Participated in a computer skills workshop, enhancing proficiency in programming, problem-solving, and technical applications.</a></li>
+    </ul>
+</div>
+</section>
+
+<section id="resume">
+<div class="section-content">
+    <center>
+        <h2>Resume</h2>
+        <a href="https://drive.google.com/file/d/187fljVse4q3f3ulJInID7nB7BgqT_5LD/view?usp=drivesdk" target="_blank" class="download-button">Download CV</a>
+    </center>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Sweatha S</p>
+</footer>
+
+<script>
+// Smooth scrolling functionality
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
